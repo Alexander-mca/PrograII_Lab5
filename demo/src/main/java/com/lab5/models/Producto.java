@@ -3,9 +3,9 @@ package com.lab5.models;
 public class Producto {
     private Long id;
     private String nombre, categoria;
-    private double precio;
+    private Double precio;
 
-    public Producto(Long id, String nombre, String categoria, double precio){
+    public Producto(Long id, String nombre, String categoria, Double precio){
         this.id = id;
         this.nombre = nombre;
         this.precio = precio;
@@ -36,10 +36,10 @@ public class Producto {
         return this.categoria;
     }
 
-    public void setPrecio(double precio){
+    public void setPrecio(Double precio){
         this.precio = precio;
     }
-    public double getPrecio(){
+    public Double getPrecio(){
         return this.precio;
     }
 
