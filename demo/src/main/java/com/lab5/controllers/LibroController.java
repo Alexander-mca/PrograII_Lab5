@@ -80,12 +80,13 @@ public class LibroController {
                     //validar libro duplicado
                     for (Libro item : libros) {
                         if (item.getTitulo().equalsIgnoreCase(libro.getTitulo())) {
-                            return ResponseEntity.status(HttpStatus.CONFLICT).body(
+                            ResponseEntity.status(HttpStatus.CONFLICT).body(
                                 Map.of(
                                     "mensaje", "Ya existe un libro con ese nombre",
                                     "codigo", 409
                                 )
                             );
+                            break;
                         }
                     }
 
@@ -107,9 +108,9 @@ public class LibroController {
 
 
         }
-
+        //Put - actualizar libros
         @PutMapping("/{id}")
-        public ResponseEntity<?> actualizarlibro(@PathVariable Long id, @RequestBody Libro libroActualizado){
+        public ResponseEntity<?> actualizarLibro(@PathVariable Long id, @RequestBody Libro libroActualizado){
             for(Libro libro: libros){
                 if(libro.getId().equals(id)){
                         if(libroActualizado.getTitulo() ==null
@@ -149,6 +150,7 @@ public class LibroController {
             );               
         }
 
+        //Patch - actualiza parcialmente un libro
         @PatchMapping("/{id}")
         public ResponseEntity<?> actualizarParcialmente(@PathVariable Long id, @RequestBody Libro libroActualizado){
             for (Libro libro : libros) {
@@ -213,8 +215,9 @@ public class LibroController {
             );
         }
 
+        //elimina un libro en especifico
         @DeleteMapping("/{id}")
-        public ResponseEntity<?> eliminarlibro(@PathVariable Long id){
+        public ResponseEntity<?> eliminarLibro(@PathVariable Long id){
             for (Libro libro : libros) {
                 if(libro.getId().equals(id)){
                     libros.remove(libro);
@@ -235,4 +238,5 @@ public class LibroController {
                 )
             );
         }
+
 }
