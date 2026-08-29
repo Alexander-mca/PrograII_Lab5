@@ -144,11 +144,11 @@ public class PeliculaController {
     }
 
      @PatchMapping("/{id}")
-        public ResponseEntity<?> actualizarParcialmente(@PathVariable Long id, @RequestBody Pelicula peliculaActualizado){
+        public ResponseEntity<?> actualizarParcialmente(@PathVariable Long id, @RequestBody Pelicula peliculaActualizada){
             for (Pelicula pelicula : peliculas) {
                 if(pelicula.getId().equals(id)){
-                    if(peliculaActualizado.getTitulo() != null){
-                        if(peliculaActualizado.getTitulo().isBlank()){
+                    if(peliculaActualizada.getTitulo() != null){
+                        if(peliculaActualizada.getTitulo().isBlank()){
                             return ResponseEntity.badRequest().body(
                                 Map.of(
                                     "mensaje", "El titulo no puede estar vacio",
@@ -157,11 +157,11 @@ public class PeliculaController {
                             );
                             
                         }
-                        pelicula.setTitulo(peliculaActualizado.getTitulo());
+                        pelicula.setTitulo(peliculaActualizada.getTitulo());
                     }
                     
-                    if(peliculaActualizado.getDirector() != null){
-                        if(peliculaActualizado.getDirector().isBlank()){
+                    if(peliculaActualizada.getDirector() != null){
+                        if(peliculaActualizada.getDirector().isBlank()){
                             return ResponseEntity.badRequest().body(
                                 Map.of(
                                     "mensaje", "El director no puede estar vacio",
@@ -170,11 +170,11 @@ public class PeliculaController {
                             );
                             
                         }
-                        pelicula.setDirector(peliculaActualizado.getDirector());
+                        pelicula.setDirector(peliculaActualizada.getDirector());
                     }
 
-                    if(peliculaActualizado.getAnyo() != null){
-                        if(peliculaActualizado.getAnyo()<=0){
+                    if(peliculaActualizada.getAnyo() != null){
+                        if(peliculaActualizada.getAnyo()<=0){
                             return ResponseEntity.badRequest().body(
                                 Map.of(
                                     "mensaje", "El año debe ser mayor a cero.",
@@ -183,11 +183,11 @@ public class PeliculaController {
                             );
                         }
 
-                        pelicula.setAnyo(peliculaActualizado.getAnyo());
+                        pelicula.setAnyo(peliculaActualizada.getAnyo());
                     }
 
-                    if(peliculaActualizado.getGenero() != null){
-                        pelicula.setGenero(peliculaActualizado.getGenero());
+                    if(peliculaActualizada.getGenero() != null){
+                        pelicula.setGenero(peliculaActualizada.getGenero());
                     }
 
                     return ResponseEntity.ok(
