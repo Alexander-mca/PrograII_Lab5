@@ -2,7 +2,7 @@
 
 Este proyecto se desarrollaron 10 APIs REST independientes con Spring y Maven
 
-1. API Productos
+## 1. API Productos
 
 Modelo:
 
@@ -13,33 +13,37 @@ Producto
 - categoria
 
 Endpoints
-GET     /api/productos
-GET     /api/productos/{id}
-POST    /api/productos
-´[
+* GET     /api/productos
+* GET     /api/productos/{id}
+* POST    /api/productos
+```
+[
     {
         "nombre": "La Foca",
         "categoria" : "Jabon",
         "precio" : 5
     }
-]´
-PUT     /api/productos/{id}
-´
+]
+```
+* PUT     /api/productos/{id}
+```
 {
         "nombre": "La Foca",
         "categoria" : "Jabon",
         "precio" : 5
 }
-´
-PATCH   /api/productos/{id}
-´{
+```
+* PATCH   /api/productos/{id}
+```
+{
         "precio" : 5
-}´ 
-DELETE  /api/productos/{id}
+}
+``` 
+* DELETE  /api/productos/{id}
 
  
 
-2. API Estudiantes
+## 2. API Estudiantes
 
 Modelo
 Estudiante
@@ -50,10 +54,10 @@ Estudiante
 - edad
 
 Endpoints
-GET     /api/estudiantes
-GET     /api/estudiantes/{id}
-POST    /api/estudiantes
-´
+* GET     /api/estudiantes
+* GET     /api/estudiantes/{id}
+* POST    /api/estudiantes
+```
 [
     {
         "nombre":"Alejandro",
@@ -62,26 +66,26 @@ POST    /api/estudiantes
         "edad": 25
     }
 ]
-´
-PUT     /api/estudiantes/{id}
-´
+```
+* PUT     /api/estudiantes/{id}
+```
 {
     "nombre":"Alejandro",
     "apellido":"Polanco",
     "carrera": "Agronomia",
     "edad": 25
 }
-´
-PATCH   /api/estudiantes/{id}
-´
+```
+* PATCH   /api/estudiantes/{id}
+```
 {
     "edad": 25
 }
-´
-DELETE  /api/estudiantes/{id}
+```
+* DELETE  /api/estudiantes/{id}
 
 
-3. API Libros
+## 3. API Libros
 
 Modelo
 Libro
@@ -92,10 +96,10 @@ Libro
 - precio
 
 Endpoints
-GET     /api/libros
-GET     /api/libros/{id}
-POST    /api/libros
-´
+* GET     /api/libros
+* GET     /api/libros/{id}
+* POST    /api/libros
+```
 [
 {
     "titulo" : "Cien años de soledad",
@@ -105,24 +109,25 @@ POST    /api/libros
 }
 
 ]
-´
-PUT     /api/libros/{id}
-´
+```
+* PUT     /api/libros/{id}
+```
 {
     "titulo" : "Cien años de soledad",
     "autor" : "Gabriel Garcia Marquez",
     "genero" : "Realismo Magico",
     "precio" : 120
 }
-´
-PATCH   /api/libros/{id}
-´{
+```
+* PATCH   /api/libros/{id}
+```{
     "precio" : 120
-}´
-DELETE  /api/libros/{id}
+}
+```
+* DELETE  /api/libros/{id}
 
 
-4. API Empleados
+## 4. API Empleados
 
 Modelo
 Empleado
@@ -133,10 +138,10 @@ Empleado
 - departamento
 
 Endpoints
-GET     /api/empleados
-GET     /api/empleados/{id}
-POST    /api/empleados
-´
+* GET     /api/empleados
+* GET     /api/empleados/{id}
+* POST    /api/empleados
+```
 [
     {
     "nombre": "Ana Gómez",
@@ -145,26 +150,26 @@ POST    /api/empleados
     "salario": 2500
   }
 ]
-´
-PUT     /api/empleados/{id}
-´
+```
+* PUT     /api/empleados/{id}
+```
 {
     "nombre": "Ana Gómez",
     "puesto": "Desarrolladora de Software",
     "departamento": "Tecnología",
     "salario": 2500
   }
-´
-PATCH   /api/empleados/{id}
-´
+```
+* PATCH   /api/empleados/{id}
+```
 {
     "salario": 2500
 }
-´
-DELETE  /api/empleados/{id}
+```
+* DELETE  /api/empleados/{id}
 
 
-5. Películas
+## 5. Películas
 
 Modelo
 Pelicula
@@ -175,10 +180,10 @@ Pelicula
 - anio
 
 Endpoints
-GET     /api/peliculas
-GET     /api/peliculas/{id}
-POST    /api/peliculas
-´
+* GET     /api/peliculas
+* GET     /api/peliculas/{id}
+* POST    /api/peliculas
+```
 [
     {
     "titulo": "Inception",
@@ -187,26 +192,26 @@ POST    /api/peliculas
     "año": 2010
   }
 ]
-´
-PUT     /api/peliculas/{id}
-´
+```
+- PUT     /api/peliculas/{id}
+```
 {
     "titulo": "Inception",
     "director": "Christopher Nolan",
     "genero": "Ciencia ficción",
     "año": 2010
   }
-´
-PATCH   /api/peliculas/{id}
-´
+```
+- PATCH   /api/peliculas/{id}
+```
 {
     "año": 2010
   }
-´
-DELETE  /api/peliculas/{id}
+```
+- DELETE  /api/peliculas/{id}
 
 
-6. API Cursos
+## 6. API Cursos
 
 Modelo
 Curso
@@ -217,10 +222,10 @@ Curso
 - modalidad
 
 Endpoints
-GET     /api/cursos
-GET     /api/cursos/{id}
-POST    /api/cursos
-´
+- GET     /api/cursos
+- GET     /api/cursos/{id}
+- POST    /api/cursos
+```
 [
 {
     "nombre": "Introducción a la Inteligencia Artificial",
@@ -229,28 +234,28 @@ POST    /api/cursos
     "creditos": 4
   }
 ]
-´
-PUT     /api/cursos/{id}
-´
+```
+- PUT     /api/cursos/{id}
+```
 {
     "nombre": "Introducción a la Inteligencia Artificial",
     "descripcion": "Conceptos básicos de aprendizaje automático, redes neuronales y ética en la IA.",
     "modalidad": "Virtual",
     "creditos": 4
   }
-´
-PATCH   /api/cursos/{id}
-´
+```
+- PATCH   /api/cursos/{id}
+```
 {
     "modalidad": "Virtual",
     "creditos": 4
   }
-´
-DELETE  /api/cursos/{id}
+```
+- DELETE  /api/cursos/{id}
 
  
 
-7. API Vehiculos
+## 7. API Vehiculos
 
 Modelo
 Vehiculo
@@ -261,10 +266,10 @@ Vehiculo
 - precio
 
 Endpoints
-GET     /api/vehiculos
-GET     /api/vehiculos/{id}
-POST    /api/vehiculos
-´
+- GET     /api/vehiculos
+- GET     /api/vehiculos/{id}
+- POST    /api/vehiculos
+```
 [
 {
     "marca": "Chevrolet",
@@ -273,28 +278,28 @@ POST    /api/vehiculos
     "precio_usd": 18500
   }
 ]
-´
-PUT     /api/vehiculos/{id}
-´
+```
+- PUT     /api/vehiculos/{id}
+```
 {
     "marca": "Chevrolet",
     "modelo": "Onix",
     "año": 2023,
     "precio_usd": 18500
   }
-´
-PATCH   /api/vehiculos/{id}
-´
+```
+- PATCH   /api/vehiculos/{id}
+```
 {
     "año": 2023,
     "precio_usd": 18500
   }
-´
-DELETE  /api/vehiculos/{id}
+```
+- DELETE  /api/vehiculos/{id}
 
  
 
-8. API Tareas
+## 8. API Tareas
 
 Modelo
 Tarea
@@ -305,10 +310,10 @@ Tarea
 - completada
 
 Endpoints
-GET     /api/tareas
-GET     /api/tareas/{id}
-POST    /api/tareas
-´
+- GET     /api/tareas
+- GET     /api/tareas/{id}
+- POST    /api/tareas
+```
 [
 {
     "titulo": "Preparar presentación de ventas",
@@ -317,28 +322,28 @@ POST    /api/tareas
     "completada": false
   }
 ]
-´
-PUT     /api/tareas/{id}
-´
+```
+- PUT     /api/tareas/{id}
+```
 {
     "titulo": "Preparar presentación de ventas",
     "descripcion": "Diseñar las diapositivas para la reunión trimestral con los inversores.",
     "prioridad": "Alta",
     "completada": false
   }
-´
-PATCH   /api/tareas/{id}
-´
+```
+- PATCH   /api/tareas/{id}
+```
 {
     "prioridad": "Alta",
     "completada": false
   }
-´
-DELETE  /api/tareas/{id}
+```
+- DELETE  /api/tareas/{id}
 
  
 
-9. API Clientes
+## 9. API Clientes
 
 Modelo
 Cliente
@@ -349,10 +354,10 @@ Cliente
 - telefono
 
 Endpoints
-GET     /api/clientes
-GET     /api/clientes/{id}
-POST    /api/clientes
-´
+- GET     /api/clientes
+- GET     /api/clientes/{id}
+- POST    /api/clientes
+```
 [
 {
     "nombre": "Carlos",
@@ -361,27 +366,27 @@ POST    /api/clientes
     "telefono": "2234-5678"
   }
 ]
-´
-PUT     /api/clientes/{id}
-´
+```
+- PUT     /api/clientes/{id}
+```
 {
     "nombre": "Carlos",
     "apellido": "Mendoza",
     "correo": "carlos.mendoza@example.com",
     "telefono": "2234-5678"
   }
-´
-PATCH   /api/clientes/{id}
-´
+```
+- PATCH   /api/clientes/{id}
+```
 {
     "correo": "carlos.mendoza@example.com",
     "telefono": "2234-5678"
   }
-´
-DELETE  /api/clientes/{id}
+```
+- DELETE  /api/clientes/{id}
 
 
-10. API Pedidos
+## 10. API Pedidos
 
 Modelo
 Pedido
@@ -393,10 +398,10 @@ Pedido
 - estado
 
 Endpoints
-GET     /api/pedidos
-GET     /api/pedidos/{id}
-POST    /api/pedidos
-´
+- GET     /api/pedidos
+- GET     /api/pedidos/{id}
+- POST    /api/pedidos
+```
 [
     {
     "cliente": "Sofía Martínez",
@@ -406,9 +411,9 @@ POST    /api/pedidos
     "total": 299.00
   }
 ]
-´
-PUT     /api/pedidos/{id}
-´
+```
+- PUT     /api/pedidos/{id}
+```
 {
     "cliente": "Sofía Martínez",
     "producto": "Auriculares Sony WH-1000XM4",
@@ -416,12 +421,12 @@ PUT     /api/pedidos/{id}
     "cantidad": 1,
     "total": 299.00
   }
-´
-PATCH   /api/pedidos/{id}
-´
+```
+- PATCH   /api/pedidos/{id}
+```
 {
     "cantidad": 1,
     "total": 299.00
   }
-´
-DELETE  /api/pedidos/{id}
+```
+- DELETE  /api/pedidos/{id}
