@@ -1,0 +1,1616 @@
+{
+  "info": {
+    "_postman_id": "1067d66e-86f5-452c-8012-c26cb8742cb9",
+    "name": "APIs REST - LaboratorioV",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "12905687",
+    "_collection_link": "https://go.postman.co/collection/12905687-1067d66e-86f5-452c-8012-c26cb8742cb9?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "01 Productos",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/productos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "productos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/productos/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "productos",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n    {\r\n        \"nombre\": \"La Foca\",\r\n        \"categoria\" : \"Jabon\",\r\n        \"precio\" : 5\r\n    },\r\n    {\r\n        \"nombre\": \"Fresas\",\r\n        \"categoria\" : \"Frutas\",\r\n        \"precio\" : 10\r\n    },\r\n    {\r\n        \"nombre\": \"Jamon Perry\",\r\n        \"categoria\" : \"Carnes y Embutidos\",\r\n        \"precio\" : 15\r\n    },\r\n    {\r\n        \"nombre\": \"Arroz Molinero\",\r\n        \"categoria\" : \"Granos\",\r\n        \"precio\" : 6\r\n    },\r\n    {\r\n        \"nombre\": \"Leche Delactomy\",\r\n        \"categoria\" : \"Lacteos\",\r\n        \"precio\" : 15\r\n    }\r\n]\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/productos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "productos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\" : \"Crema Rincon Azulado\",\r\n    \"categoria\" : \"lacteos\",\r\n    \"precio\" : 20\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/productos/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "productos",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\":\"Repollo\",\r\n    \"precio\" : 5\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/productos/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "productos",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\":\"Repollo\",\r\n    \"precio\" : 5\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/productos/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "productos",
+                "4"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "02 Estudiantes",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/estudiantes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "estudiantes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/estudiantes/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "estudiantes",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n    {\r\n        \"nombre\":\"Alejandro\",\r\n        \"apellido\":\"Polanco\",\r\n        \"carrera\": \"Agronomia\",\r\n        \"edad\": 25\r\n    },\r\n    {\r\n        \"nombre\":\"Marisol\",\r\n        \"apellido\":\"Garcia\",\r\n        \"carrera\": \"Medicina\",\r\n        \"edad\": 22\r\n    },\r\n    {\r\n        \"nombre\":\"Bryan\",\r\n        \"apellido\":\"Lopez\",\r\n        \"carrera\": \"Odontologia\",\r\n        \"edad\": 27\r\n    },\r\n    {\r\n        \"nombre\":\"Enrique\",\r\n        \"apellido\":\"Puentes\",\r\n        \"carrera\": \"Economia\",\r\n        \"edad\": 23\r\n    },\r\n    {\r\n        \"nombre\":\"Carla\",\r\n        \"apellido\":\"Muralles\",\r\n        \"carrera\": \"Psicologia\",\r\n        \"edad\": 36\r\n    }\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/estudiantes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "estudiantes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n        \"nombre\":\"Enrique\",\r\n        \"apellido\":\"Fuentes\",\r\n        \"carrera\": \"Auditoria\",\r\n        \"edad\": 20\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/estudiantes/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "estudiantes",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\":\"Gregorio\",\r\n    \"apellido\":\"Barrientos\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/estudiantes/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "estudiantes",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n    {\r\n        \"nombre\":\"Alejandro\",\r\n        \"apellido\":\"Polanco\",\r\n        \"carrera\": \"Agronomia\",\r\n        \"edad\": 25\r\n    },\r\n    {\r\n        \"nombre\":\"Marisol\",\r\n        \"apellido\":\"Garcia\",\r\n        \"carrera\": \"Medicina\",\r\n        \"edad\": 22\r\n    },\r\n    {\r\n        \"nombre\":\"Bryan\",\r\n        \"apellido\":\"Lopez\",\r\n        \"carrera\": \"Odontologia\",\r\n        \"edad\": 27\r\n    },\r\n    {\r\n        \"nombre\":\"Enrique\",\r\n        \"apellido\":\"Puentes\",\r\n        \"carrera\": \"Economia\",\r\n        \"edad\": 23\r\n    },\r\n    {\r\n        \"nombre\":\"Carla\",\r\n        \"apellido\":\"Muralles\",\r\n        \"carrera\": \"Psicologia\",\r\n        \"edad\": 36\r\n    }\r\n]"
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/estudiantes/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "estudiantes",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "03 Libros",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/libros",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "libros"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/libros/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "libros",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n    {\r\n        \"titulo\" : \"Cien años de soledad\",\r\n        \"autor\" : \"Gabriel Garcia Marquez\",\r\n        \"genero\" : \"Realismo Magico\",\r\n        \"precio\" : 120\r\n    },\r\n    {\r\n        \"titulo\" : \"Don Quijote de la Mancha\",\r\n        \"autor\" : \"Miguel de Cervantes\",\r\n        \"genero\" : \"Novela Satirica\",\r\n        \"precio\" : 90\r\n    },\r\n    {\r\n        \"titulo\" : \"Crimen y Castigo\",\r\n        \"autor\" : \"Fiodor Dostoyevski\",\r\n        \"genero\" : \"Novela Psicologica\",\r\n        \"precio\" : 100\r\n    },\r\n    {\r\n        \"titulo\" : \"Orgullo y prejuicio\",\r\n        \"autor\" : \"Jane Austen\",\r\n        \"genero\" : \"Novela Romantica\",\r\n        \"precio\" : 80\r\n    },\r\n    {\r\n        \"titulo\" : \"1984\",\r\n        \"autor\" : \"George Orwell\",\r\n        \"genero\" : \"Novela Distopica\",\r\n        \"precio\" : 150\r\n    }\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/libros",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "libros"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"titulo\": \"El señor de los anillos\",\r\n    \"Autor\" : \"J.R.R. Tolkien\",\r\n    \"genero\" : \"Fantasia Epica\",\r\n    \"precio\" : 129\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/libros/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "libros",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"precio\" : 170\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/libros/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "libros",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"precio\" : 170\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/libros/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "libros",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "04 Empleados",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/empleados",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "empleados"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/empleados/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "empleados",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n    {\r\n    \"nombre\": \"Ana Gómez\",\r\n    \"puesto\": \"Desarrolladora de Software\",\r\n    \"departamento\": \"Tecnología\",\r\n    \"salario\": 2500\r\n  },\r\n  {\r\n    \"nombre\": \"Carlos Pérez\",\r\n    \"puesto\": \"Gerente de Ventas\",\r\n    \"departamento\": \"Ventas\",\r\n    \"salario\": 3200\r\n  },\r\n  {\r\n    \"nombre\": \"Elena Rodríguez\",\r\n    \"puesto\": \"Contadora\",\r\n    \"departamento\": \"Finanzas\",\r\n    \"salario\": 2100\r\n  },\r\n  {\r\n    \"nombre\": \"David Martínez\",\r\n    \"puesto\": \"Especialista en Marketing\",\r\n    \"departamento\": \"Marketing\",\r\n    \"salario\": 1900\r\n  },\r\n  {\r\n    \"nombre\": \"Lucía Fernández\",\r\n    \"puesto\": \"Recursos Humanos\",\r\n    \"departamento\": \"RRHH\",\r\n    \"salario\": 2000\r\n  },\r\n  {\r\n    \"nombre\": \"Jorge Sánchez\",\r\n    \"puesto\": \"Soporte Técnico\",\r\n    \"departamento\": \"Tecnología\",\r\n    \"salario\": 1500\r\n  },\r\n  {\r\n    \"nombre\": \"Sofía Torres\",\r\n    \"puesto\": \"Diseñadora Gráfica\",\r\n    \"departamento\": \"Marketing\",\r\n    \"salario\": 1800\r\n  },\r\n  {\r\n    \"nombre\": \"Mateo Ramírez\",\r\n    \"puesto\": \"Analista de Datos\",\r\n    \"departamento\": \"Tecnología\",\r\n    \"salario\": 2700\r\n  },\r\n  {\r\n    \"nombre\": \"Valeria Castro\",\r\n    \"puesto\": \"Asistente Administrativa\",\r\n    \"departamento\": \"Administración\",\r\n    \"salario\": 1300\r\n  },\r\n  {\r\n    \"nombre\": \"Andrés Morales\",\r\n    \"puesto\": \"Director Financiero\",\r\n    \"departamento\": \"Finanzas\",\r\n    \"salario\": 4500\r\n  }\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/empleados",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "empleados"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "\r\n{\r\n    \"nombre\": \"Carla Giron\",\r\n    \"puesto\": \"Agente de Ventas\",\r\n    \"departamento\": \"Ventas\",\r\n    \"salario\": 4500\r\n  }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/empleados/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "empleados",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "\r\n\r\n{\r\n    \"salario\" : 5000,\r\n    \"puesto\" : \"Directora General\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/empleados/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "empleados",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"precio\" : 170\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/empleados/5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "empleados",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "05 Peliculas",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/peliculas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "peliculas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/peliculas/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "peliculas",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n  {\r\n    \"titulo\": \"Inception\",\r\n    \"director\": \"Christopher Nolan\",\r\n    \"genero\": \"Ciencia ficción\",\r\n    \"año\": 2010\r\n  },\r\n  {\r\n    \"titulo\": \"The Godfather\",\r\n    \"director\": \"Francis Ford Coppola\",\r\n    \"genero\": \"Drama\",\r\n    \"año\": 1972\r\n  },\r\n  {\r\n    \"titulo\": \"Spirited Away\",\r\n    \"director\": \"Hayao Miyazaki\",\r\n    \"genero\": \"Animación\",\r\n    \"año\": 2001\r\n  },\r\n  {\r\n    \"titulo\": \"Pulp Fiction\",\r\n    \"director\": \"Quentin Tarantino\",\r\n    \"genero\": \"Crimen\",\r\n    \"año\": 1994\r\n  },\r\n  {\r\n    \"titulo\": \"Parasite\",\r\n    \"director\": \"Bong Joon Ho\",\r\n    \"genero\": \"Suspenso\",\r\n    \"año\": 2019\r\n  }\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/peliculas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "peliculas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"titulo\": \"The Matrix\",\r\n    \"director\": \"Lana Wachowski, Lilly Wachowski\",\r\n    \"genero\": \"Ciencia ficción\",\r\n    \"año\": 1999\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/peliculas/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "peliculas",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"genero\" : \"Romance\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/peliculas/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "peliculas",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"precio\" : 170\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/peliculas/5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "peliculas",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "06 Cursos",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/cursos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "cursos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/cursos/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "cursos",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n  {\r\n    \"nombre\": \"Introducción a la Inteligencia Artificial\",\r\n    \"descripcion\": \"Conceptos básicos de aprendizaje automático, redes neuronales y ética en la IA.\",\r\n    \"modalidad\": \"Virtual\",\r\n    \"creditos\": 4\r\n  },\r\n  {\r\n    \"nombre\": \"Cálculo Multivariable\",\r\n    \"descripcion\": \"Estudio de funciones de varias variables, derivadas parciales e integrales múltiples.\",\r\n    \"modalidad\": \"Presencial\",\r\n    \"creditos\": 5\r\n  },\r\n  {\r\n    \"nombre\": \"Desarrollo Web Frontend\",\r\n    \"descripcion\": \"Creación de interfaces de usuario interactivas usando HTML, CSS y JavaScript moderno.\",\r\n    \"modalidad\": \"Híbrida\",\r\n    \"creditos\": 3\r\n  },\r\n  {\r\n    \"nombre\": \"Gestión de Proyectos Ágiles\",\r\n    \"descripcion\": \"Implementación de metodologías Scrum y Kanban para optimizar el trabajo en equipo.\",\r\n    \"modalidad\": \"Virtual\",\r\n    \"creditos\": 2\r\n  },\r\n  {\r\n    \"nombre\": \"Bases de Datos Relacionales\",\r\n    \"descripcion\": \"Diseño, modelado y consulta de bases de datos utilizando el lenguaje SQL.\",\r\n    \"modalidad\": \"Presencial\",\r\n    \"creditos\": 4\r\n  },\r\n  {\r\n    \"nombre\": \"Finanzas Personales e Inversión\",\r\n    \"descripcion\": \"Estrategias para el control de gastos, ahorro, presupuestos y fundamentos de la bolsa.\",\r\n    \"modalidad\": \"Virtual\",\r\n    \"creditos\": 2\r\n  },\r\n  {\r\n    \"nombre\": \"Fundamentos de Ciberseguridad\",\r\n    \"descripcion\": \"Principios de protección de datos, criptografía básica y mitigación de ataques informáticos.\",\r\n    \"modalidad\": \"Híbrida\",\r\n    \"creditos\": 3\r\n  },\r\n  {\r\n    \"nombre\": \"Marketing Digital y SEO\",\r\n    \"descripcion\": \"Estrategias de posicionamiento web, pauta digital y analítica para negocios online.\",\r\n    \"modalidad\": \"Virtual\",\r\n    \"creditos\": 3\r\n  },\r\n  {\r\n    \"nombre\": \"Diseño de Experiencia de Usuario (UX/UI)\",\r\n    \"descripcion\": \"Principios de usabilidad, prototipado de aplicaciones y pruebas con usuarios reales.\",\r\n    \"modalidad\": \"Híbrida\",\r\n    \"creditos\": 4\r\n  },\r\n  {\r\n    \"nombre\": \"Liderazgo y Comunicación Efectiva\",\r\n    \"descripcion\": \"Desarrollo de habilidades blandas, resolución de conflictos y oratoria profesional.\",\r\n    \"modalidad\": \"Presencial\",\r\n    \"creditos\": 2\r\n  }\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/cursos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "cursos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\": \"Introducción a la Inteligencia Artificial\",\r\n    \"descripcion\": \"Conceptos básicos de aprendizaje automático, redes neuronales y ética en la IA.\",\r\n    \"modalidad\": \"Presencial\",\r\n    \"creditos\": 5\r\n  }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/cursos/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "cursos",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"modalidad\" : \"Presencial\",\r\n    \"descripcion\" : \"Un dia soleado\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/cursos/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "cursos",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/cursos/5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "cursos",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "07 Vehiculo",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/vehiculos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "vehiculos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/vehiculos/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "vehiculos",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n{\r\n    \"marca\": \"Chevrolet\",\r\n    \"modelo\": \"Onix\",\r\n    \"año\": 2023,\r\n    \"precio_usd\": 18500\r\n  },\r\n  {\r\n    \"marca\": \"Nissan\",\r\n    \"modelo\": \"Sentra\",\r\n    \"año\": 2024,\r\n    \"precio_usd\": 21000\r\n  },\r\n  {\r\n    \"marca\": \"Hyundai\",\r\n    \"modelo\": \"Tucson\",\r\n    \"año\": 2023,\r\n    \"precio_usd\": 27500\r\n  },\r\n  {\r\n    \"marca\": \"Kia\",\r\n    \"modelo\": \"Sportage\",\r\n    \"año\": 2024,\r\n    \"precio_usd\": 28000\r\n  },\r\n  {\r\n    \"marca\": \"Mazda\",\r\n    \"modelo\": \"CX-5\",\r\n    \"año\": 2023,\r\n    \"precio_usd\": 29300\r\n  },\r\n  {\r\n    \"marca\": \"Volkswagen\",\r\n    \"modelo\": \"Jetta\",\r\n    \"año\": 2024,\r\n    \"precio_usd\": 23000\r\n  },\r\n  {\r\n    \"marca\": \"BMW\",\r\n    \"modelo\": \"Serie 3\",\r\n    \"año\": 2024,\r\n    \"precio_usd\": 45000\r\n  }\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/vehiculos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "vehiculos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"marca\": \"Volkswagen\",\r\n    \"modelo\": \"Jetta\",\r\n    \"año\": 2004,\r\n    \"precio_usd\": 10000\r\n  }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/vehiculos/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "vehiculos",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"precio\" : 15000\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/vehiculos/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "vehiculos",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/vehiculos/5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "vehiculos",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "08 Tareas",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/tareas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "tareas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/tareas/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "tareas",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n{\r\n    \"titulo\": \"Preparar presentación de ventas\",\r\n    \"descripcion\": \"Diseñar las diapositivas para la reunión trimestral con los inversores.\",\r\n    \"prioridad\": \"Alta\",\r\n    \"completada\": false\r\n  },\r\n  {\r\n    \"titulo\": \"Lavar el automóvil\",\r\n    \"descripcion\": \"Llevar el coche al autolavado o limpiarlo en el jardín.\",\r\n    \"prioridad\": \"Baja\",\r\n    \"completada\": false\r\n  },\r\n  {\r\n    \"titulo\": \"Revisar correo electrónico\",\r\n    \"descripcion\": \"Responder a los mensajes pendientes de los clientes y limpiar la bandeja de entrada.\",\r\n    \"prioridad\": \"Media\",\r\n    \"completada\": true\r\n  },\r\n  {\r\n    \"titulo\": \"Cita con el dentista\",\r\n    \"descripcion\": \"Asistir a la revisión médica anual programada para las 4:00 PM.\",\r\n    \"prioridad\": \"Alta\",\r\n    \"completada\": true\r\n  },\r\n  {\r\n    \"titulo\": \"Leer capítulo de libro\",\r\n    \"descripcion\": \"Avanzar con la lectura del libro actual sobre gestión de proyectos.\",\r\n    \"prioridad\": \"Baja\",\r\n    \"completada\": false\r\n  },\r\n  {\r\n    \"titulo\": \"Pagar facturas de servicios\",\r\n    \"descripcion\": \"Realizar el pago en línea de la luz, el agua y el servicio de internet.\",\r\n    \"prioridad\": \"Alta\",\r\n    \"completada\": false\r\n  },\r\n  {\r\n    \"titulo\": \"Planificar menú semanal\",\r\n    \"descripcion\": \"Organizar las comidas de los próximos días para optimizar las compras.\",\r\n    \"prioridad\": \"Media\",\r\n    \"completada\": true\r\n  }\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/tareas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "tareas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"titulo\": \"Pagar facturas de luz\",\r\n    \"descripcion\": \"Realizar el pago en línea de la luz\",\r\n    \"prioridad\": \"Alta\",\r\n    \"completada\": true\r\n  }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/tareas/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "tareas",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"completada\" : false,\r\n    \"descripcion\" : \"No hagas nada\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/tareas/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "tareas",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/tareas/5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "tareas",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "09 Clientes",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/clientes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "clientes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/clientes/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "clientes",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n  {\r\n    \"nombre\": \"Carlos\",\r\n    \"apellido\": \"Mendoza\",\r\n    \"correo\": \"carlos.mendoza@example.com\",\r\n    \"telefono\": \"2234-5678\"\r\n  },\r\n  {\r\n    \"nombre\": \"María\",\r\n    \"apellido\": \"Rodríguez\",\r\n    \"correo\": \"maria.rodriguez@example.com\",\r\n    \"telefono\": \"4152-9876\"\r\n  },\r\n  {\r\n    \"nombre\": \"Juan\",\r\n    \"apellido\": \"Pérez\",\r\n    \"correo\": \"juan.perez@example.com\",\r\n    \"telefono\": \"5501-2345\"\r\n  },\r\n  {\r\n    \"nombre\": \"Ana\",\r\n    \"apellido\": \"Martínez\",\r\n    \"correo\": \"ana.martinez@example.com\",\r\n    \"telefono\": \"7890-1234\"\r\n  },\r\n  {\r\n    \"nombre\": \"Luis\",\r\n    \"apellido\": \"Gómez\",\r\n    \"correo\": \"luis.gomez@example.com\",\r\n    \"telefono\": \"3344-5566\"\r\n  },\r\n  {\r\n    \"nombre\": \"Laura\",\r\n    \"apellido\": \"Sánchez\",\r\n    \"correo\": \"laura.sanchez@example.com\",\r\n    \"telefono\": \"6677-8899\"\r\n  },\r\n  {\r\n    \"nombre\": \"Diego\",\r\n    \"apellido\": \"López\",\r\n    \"correo\": \"diego.lopez@example.com\",\r\n    \"telefono\": \"4455-6677\"\r\n  },\r\n  {\r\n    \"nombre\": \"Elena\",\r\n    \"apellido\": \"Fernández\",\r\n    \"correo\": \"elena.fernandez@example.com\",\r\n    \"telefono\": \"2211-3344\"\r\n  },\r\n  {\r\n    \"nombre\": \"Andrés\",\r\n    \"apellido\": \"García\",\r\n    \"correo\": \"andres.garcia@example.com\",\r\n    \"telefono\": \"5566-7788\"\r\n  },\r\n  {\r\n    \"nombre\": \"Sofía\",\r\n    \"apellido\": \"Torres\",\r\n    \"correo\": \"sofia.torres@example.com\",\r\n    \"telefono\": \"7788-9900\"\r\n  }\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/clientes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "clientes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": " {\r\n    \"nombre\": \"María\",\r\n    \"apellido\": \"Hernandez\",\r\n    \"correo\": \"maria.hernandez@example.com\",\r\n    \"telefono\": \"4178-5550\"\r\n  }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/clientes/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "clientes",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"telefono\" : \"4045-2244\",\r\n    \"correo\" : \"ejemplo@ejemplo@gmail.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/clientes/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "clientes",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/clientes/5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "clientes",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "10 Pedidos",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/pedidos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "pedidos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8090/api/pedidos/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "pedidos",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n  {\r\n    \"cliente\": \"Sofía Martínez\",\r\n    \"producto\": \"Auriculares Sony WH-1000XM4\",\r\n    \"estado\": \"Entregado\",\r\n    \"cantidad\": 1,\r\n    \"total\": 299.00\r\n  },\r\n  {\r\n    \"cliente\": \"Jorge Eliécer Castro\",\r\n    \"producto\": \"Disco Duro Externo 2TB\",\r\n    \"estado\": \"Cancelado\",\r\n    \"cantidad\": 3,\r\n    \"total\": 240.00\r\n  },\r\n  {\r\n    \"cliente\": \"Elena Villalobos\",\r\n    \"producto\": \"Silla Ergonómica de Oficina\",\r\n    \"estado\": \"Entregado\",\r\n    \"cantidad\": 1,\r\n    \"total\": 185.50\r\n  },\r\n  {\r\n    \"cliente\": \"Mauricio Peralta\",\r\n    \"producto\": \"Memoria RAM Corsair 16GB\",\r\n    \"estado\": \"En camino\",\r\n    \"cantidad\": 4,\r\n    \"total\": 320.00\r\n  },\r\n  {\r\n    \"cliente\": \"Diana Carolina Restrepo\",\r\n    \"producto\": \"Impresora HP LaserJet\",\r\n    \"estado\": \"Procesando\",\r\n    \"cantidad\": 1,\r\n    \"total\": 145.00\r\n  },\r\n  {\r\n    \"cliente\": \"Ricardo Alarcón\",\r\n    \"producto\": \"Mouse Logitech MX Master 3\",\r\n    \"estado\": \"Entregado\",\r\n    \"cantidad\": 2,\r\n    \"total\": 200.00\r\n  },\r\n  {\r\n    \"cliente\": \"Gabriela Espinoza\",\r\n    \"producto\": \"Tarjeta Gráfica RTX 4060\",\r\n    \"estado\": \"Pendiente\",\r\n    \"cantidad\": 1,\r\n    \"total\": 349.99\r\n  }\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/pedidos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "pedidos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"cliente\": \"Ricardo Alarcón\",\r\n    \"producto\": \"Mouse Logitech MX Master 3\",\r\n    \"estado\": \"En Proceso\",\r\n    \"cantidad\": 1,\r\n    \"total\": 150.00\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/pedidos/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "pedidos",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"total\" : 133.50,\r\n    \"cantidad\": 10\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/pedidos/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "pedidos",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "text"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8090/api/pedidos/5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8090",
+              "path": [
+                "api",
+                "pedidos",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
