@@ -10,7 +10,7 @@ public class Pedido{
         this.id = id;
         this.cliente = cliente;
         this.producto = producto;
-        this.producto = producto;
+        this.estado = estado;
         this.cantidad = cantidad;
         this.total = total;
     }
